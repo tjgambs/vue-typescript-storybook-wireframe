@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "lint:fix": "eslint --ext .js,.vue,.ts src --fix",
     "storybook": "vue-cli-service storybook:serve -p 6006 -c .storybook",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "generate": "node ./scripts/generate.js"
   },
   "lint-staged": {
     "*.ts": [
@@ -49,6 +50,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-sonarjs": "^0.5.0",
     "eslint-plugin-vue": "^6.2.2",
+    "inquirer": "^7.1.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
     "storybook": "^5.3.14",
