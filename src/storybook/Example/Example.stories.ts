@@ -1,12 +1,16 @@
-import { storiesOf } from '@storybook/vue'
 import Example from './Example.vue'
 
-const stories = storiesOf('Example|Example', module)
+export default {
+  component: Example,
+  title: 'Example'
+}
 
-stories.add('Example', () => ({
+const _Example = () => ({
   components: { Example },
   template:
     `<Example
       msg="Example Message"
     ></Example>`
-}), { decorators: [] })
+})
+
+export { _Example }
